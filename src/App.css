@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+  
+@font-face {
+  font-family: 'Sauna-Bold';
+  src: url('./Sauna-Bold.ttf');
+  /* src: url(./D:\prepbytes\projects\food_reciepe\client\src\Sauna-Bold.ttf); */
+}
+
+@font-face {
+  font-family: 'Helvetica-Bold';
+  src: url('./Helvetica-Bold-Font.ttf')
+
+}
+
+.all_main{
+  min-height: 45vh;
+}

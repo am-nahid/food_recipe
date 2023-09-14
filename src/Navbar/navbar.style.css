@@ -1,0 +1,409 @@
+.NavBar-cntnr{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.food_head a{
+    text-decoration: none;
+    color: white;
+}
+.NavBar-Subcntnr{
+    display: flex;
+    width: 80%;
+    color: #FFFF;
+    justify-content: space-between;
+    padding: 6px 0;
+}
+
+
+.nav-ULlist{
+    display: flex;
+    flex-flow: row nowrap;
+    flex-basis: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    gap: 2rem;
+    font-weight: 500;
+    list-style: none;
+}
+
+.nav-ULlist li{
+    cursor: pointer;
+    padding: 1rem 0;
+    /* position: relative;  modified */
+}
+
+.NavBar-icon-cntr {
+    display: flex;
+    align-items: center;
+    /* width: 10%; */
+    /* justify-content: space-around; */
+    gap: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    /* font-weight: 700; */
+}
+
+.NavBar-right{
+    display: flex;
+    align-items: center;
+}
+
+.Nav-Search {
+    font-size: 1.5rem;
+}
+
+/* .nav-ULlist li span:hover{
+     border-bottom:2px solid #77e2e1;
+}
+
+.nav-ULlist li span:hover,
+.common:hover + li span {
+  border-bottom: 2px solid #77e2e1;
+} */
+
+.nav-ULlist li:hover span {
+    border-bottom: 2px solid #77e2e1;
+  }
+
+.nav-ULlist li span{
+    padding-bottom: 5px;
+}
+
+.common{
+    position: absolute;
+    background-color: black;
+    top: 8%;
+    /* top: 100%; */
+    padding: 10px 20px;
+    z-index: 2;
+}
+
+.navRec{
+    left: 20%;
+}
+
+.navPop{
+    left: 26%;
+}
+
+.navMeat{
+    left: 34%;
+}
+.navHealthy{
+    left: 45%;
+}
+.navHoli{
+    left: 54%;
+}
+.navCuis{
+    left: 62%;
+}
+.navSea{
+    left: 68%;
+}
+
+.NavBar-drops{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    
+}
+
+.nav-icn:hover{
+   color: #77e2e1;
+}
+
+.NavBar-drops div:hover,
+.NavBar-drops a:hover {
+  color: #77e2e1;
+}
+
+.loggedInDropDown a{
+    color: #fff;
+    text-decoration: none;
+}
+ 
+
+.backDrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    /* background: rgba(0, 0, 0, 0.6); Semi-transparent black background */
+    /* filter: blur(5px);  */
+    /* z-index: 999; */
+}
+
+.backDrop:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(47,47,47,.25);
+    backdrop-filter: blur(15px);
+}
+
+.Nav_seaMore{
+    color: #77e2e1;
+}
+
+.nav-ul-ele {
+    display: flex;
+    width: 55vw;
+    justify-content: space-between;
+}
+
+.hamberger-icn {
+    font-size: 2rem;
+}
+
+.hamberger-cntnr{
+    padding-right: 1.5rem;
+    display: none;
+}
+
+.mobile-view{
+    display: none;  
+}
+
+.smile-emoji {
+    color: #f5ce35;
+    font-size: 2.2rem;
+}
+
+
+.NavBar-drops a{
+    text-decoration: none;
+    color: #fff;
+}
+.loggedInDropDown {
+    position: absolute;
+    top: 10%;
+    background-color: black;
+    z-index: 2;
+    padding: 10px 2rem 10px 2rem;
+    /* padding-bottom: 2rem; */
+    font-family: Gotham, "Helvetica Neue", Helvetica, arial, sans-serif;
+}
+
+.loggedInDropDown li{
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.loggedInDropDown li:hover{
+    color: #77e2e1;
+ }
+
+@media  (max-width:600px) {
+    .hamberger-cntnr{
+    display: block;
+    font-size: 2rem;
+    }
+
+    .web-view{
+        display: none;
+    }
+
+    /* .NavBar-cntnr {
+    padding-left: 20px;
+} */
+
+.NavBar-Subcntnr {
+    width: 90%;
+    }
+
+    .hamberger-icn {
+    font-weight: 900;
+}
+
+.NavBar-icon-cntr {
+    font-size: 1.5rem;
+    }
+
+    .Nav-Search {
+    font-size: 2rem;
+}
+
+.nav-ULlist li {
+    border-bottom: 2px solid rgba(255,255,255,.3);
+        width: 92%;
+    }
+
+
+.nav-ULlist {
+    position: absolute;
+        background-color: black;
+        color: #ffff;
+        width: 100%;
+        padding-left: 10px;
+        z-index: 2;
+    }
+
+
+    .nav-ul-ele {
+    list-style: none;
+    /* flex-direction: column; */
+    display: block;
+    /* position: absolute; */
+    width: 100%;
+    text-align: start;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 13px;
+    padding-bottom: 10rem;
+}
+/* .nav-ULlist li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    } */
+
+    .nav-ULlist li:hover span {
+    border: none;
+}
+
+.show-icon-last {
+    align-items: end;
+    display: inline-block;
+    /* padding-right: 3rem; */
+}
+
+.li-text-cntr{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.common{
+    position: static;
+}
+
+.heightIncreaser{
+    height:10rem
+}
+
+   
+
+    
+}
+
+@media  (min-width:1170px) and (max-width:1290px){
+    .nav-ul-ele {
+    gap: 20px;
+    width: 100%;
+}
+
+.NavBar-Subcntnr {
+    width: 90%;
+    }
+
+    .banner_img_cntnr {
+    padding: 0 3rem;
+}
+
+.banner-section {
+    padding: 1rem 0;
+    }
+
+    .banner-text-cntnr button {
+    top: 65%;
+}
+
+.banner-img {
+    height: 65vh;
+    }
+}
+
+
+@media  (min-width:600px) and (max-width:1170px){
+    .hamberger-cntnr{
+        display: block;
+        font-size: 2rem;
+        }
+    
+        .web-view{
+            display: none;
+        }
+    
+        .li-text-cntr {
+        display: flex;
+        justify-content: space-between;
+    }
+    .NavBar-Subcntnr {
+        width: 90%;
+        }
+    
+        .hamberger-icn {
+        font-weight: 900;
+    }
+    
+    .NavBar-icon-cntr {
+        font-size: 1.5rem;
+        }
+    
+        .Nav-Search {
+        font-size: 2rem;
+    }
+    
+    .nav-ULlist li {
+        border-bottom: 2px solid rgba(255,255,255,.3);
+            width: 92%;
+        }
+    
+    
+    .nav-ULlist {
+        position: absolute;
+            background-color: black;
+            color: #ffff;
+            width: 100%;
+            padding-left: 10px;
+            z-index: 2;
+            width: 50%;
+            font-family: brandon-grotesque, "Helvetica Neue", Helvetica, arial, sans-serif;
+        }
+    
+        .common{
+            position: static;
+        }
+    
+        .nav-ul-ele {
+        list-style: none;
+        /* flex-direction: column; */
+        display: block;
+        /* position: absolute; */
+        width: 100%;
+        text-align: start;
+        font-size: 18px;
+        font-weight: 700;
+        padding-left: 13px;
+        padding-bottom: 10rem;
+    }
+    /* .nav-ULlist li {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        } */
+    
+        .nav-ULlist li:hover span {
+        border: none;
+    }
+    
+    .show-icon-last {
+        align-items: end;
+        display: inline-block;
+        /* padding-right: 3rem; */
+    }
+}

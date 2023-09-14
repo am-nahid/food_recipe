@@ -1,0 +1,274 @@
+:root {
+    --fonts-heading: brandon-grotesque, "Helvetica Neue", Helvetica, arial, sans-serif;
+    --fonts-base: Gotham, "Helvetica Neue", Helvetica, arial, sans-serif;
+    --current-line-height: 24px;
+    --good-reading-width: 70ch;
+  
+}
+
+
+.search_navBar{
+    background-color: black;
+}
+
+.search_box-cntr {
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+
+
+.search_box-outline{
+    width: 80%;
+    background-color: #fff;
+    padding: 8px 20px;
+}
+
+.search_box-search{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    /* width: 80%; */
+    background-color: #fff;
+    align-items: center;
+    /* padding-bottom: 5px; */
+    border-bottom: 6px solid #892074;
+    overflow: hidden;
+    
+    height: 2.2rem;
+}
+
+.search-box-inputTag {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+/* .search-box-inputTag span{
+
+    padding-top: 4px;
+} */
+
+.search-box-inputTag input {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    font-size: 18px;
+    font-family: Gotham,"sans serif",sans-serif,"Helvetica Neue",Helvetica,arial;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    text-transform: none;
+    white-space: normal;
+    letter-spacing: 0;
+}
+
+.search_box-search label {
+    font-family: brandon-grotesque,"sans serif",sans-serif,"Helvetica Neue",Helvetica,arial;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    text-transform: uppercase;
+    white-space: nowrap;
+    /* letter-spacing: 1px; */
+    color: #000;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.search_box-clear{
+    gap: 10px;
+    border: 0;
+    /* padding: 0; */
+    height: 100%;
+    background: 0 0;
+    font-family: Gotham,"sans serif",sans-serif,"Helvetica Neue",Helvetica,arial;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    text-transform: none;
+    white-space: normal;
+    letter-spacing: 0;
+    font-size: 14px;
+    line-height: 33px;
+    display: flex;
+    overflow: hidden;
+}
+
+.search-box-inputTag input:focus{
+    outline: none;
+}
+
+
+.search_box-clear div{
+    
+    padding-top: 2px;
+}
+
+.search-page-cntnr {
+    width: 75%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 1rem 0 3rem 0;
+    justify-content: flex-start;
+}
+.search_bc{
+    background-color: #f0f0f0;
+}
+
+.search-page-card {
+    background-color: #fff;
+    flex: 0 1 calc(25% - 20px);
+    border-bottom: 4px solid #77E2E1;
+}
+
+.search-page-card img{
+    width: 100%;
+}
+
+.seacrch-card_label{
+    font-family: brandon-grotesque,"sans serif",sans-serif,"Helvetica Neue",Helvetica,arial;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    text-transform: uppercase;
+    white-space: normal;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 18px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+.search-page_details{
+     /* height: 5rem; */
+     height: 8rem;
+     padding: 10px;
+     position: relative;   
+}
+
+.seacrch-card_source{
+    display: block;
+    display: -webkit-box;
+    max-height: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+    margin-top: 4px;
+}
+.seacrch-card_stars{
+    position: absolute;
+    /* right: 10px; */
+    bottom: 10px;
+    display: flex;
+    gap: 2px;
+}
+
+.seacrch-card_duration{
+    position: absolute;
+    right: 10px;
+    bottom: 16px;
+}
+
+.seacrch-card_source span{
+    color: #892074;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    /* z-index: 1; */
+    margin: 0 auto 14px;
+    padding: 10px;
+    padding-left: 7%;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.share-hover {
+    text-align: center;
+    background-color: #77e2e1;
+    margin: 0 -10px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    /* height: 33px; */
+    padding: 10px;
+    font-family: var(--fonts-base);
+}
+
+
+.share-hover:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+
+.search-page-card .share-hover {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect */
+  }
+  
+  /* Show the "share-hover" div when hovering over the card */
+  .search-page-card:hover .share-hover {
+    opacity: 1;
+  }
+
+
+  @media  (min-width:744px) and (max-width:1024px){
+    .seacrch-card_duration {
+        position: absolute;
+        right: 10px;
+        bottom: 12px;
+    }
+    
+    .search-page-cntnr {
+        width: 90%;
+        justify-content: center;
+    }
+
+    .stars-mv span{
+        font-size: 1.2rem;
+    }
+
+    .search-page-card {
+        justify-content: center;
+        flex-basis: calc(33% - 20px);
+    }
+  }
+
+  @media  (max-width:744px){
+  .search-page-card {
+    margin-bottom: 20px;
+  }
+
+  .search-page-cntnr {
+    display: block;
+  }
+
+  .search_box-search {
+    display: flex;
+  }
+
+  .search_box-search label {
+    display: none;
+  }
+
+  .search_box-clear span{
+    display: none;
+  }
+
+}
