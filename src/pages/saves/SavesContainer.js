@@ -90,11 +90,11 @@ const API = `${host}/user/fetch-recipe/${user_id}`
     
         <div className="card-firstHalf">
 
-      <img
+      <Link to={`/recipe/${item.recipe[0].label}`}><img
       //  src="https://img.sndimg.com/food/image/upload/w_400,h_300,fl_progressive,q_80,c_fill/v1/img/recipes/82/28/8/cB14froTlmpDfRF49wmQ_gumbo%20SITE-3.jpg"
        src={item.recipe[0].image}
        alt={item.recipe[0].label}
-       />
+       /></Link>
         </div>
         <div className="card-secondHalf">
                     <h2 className="save-card_label">

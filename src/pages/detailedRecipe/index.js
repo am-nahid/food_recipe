@@ -5,15 +5,16 @@ import { Link, useLocation, useParams } from "react-router-dom";
 import { TfiDownload } from "react-icons/tfi";
 import { FaRegBookmark } from "react-icons/fa";
 import { AiOutlinePrinter } from "react-icons/ai";
-import { GrMore } from "react-icons/gr";
-// import { LuSmile } from "react-icons/lu";
 import { BsArrow90DegRight, BsCamera, BsEmojiSmileFill } from "react-icons/bs";
+// import { GrMore } from "react-icons/gr";
+// import { LuSmile } from "react-icons/lu";
 import "./detailedPage.style.css";
 import { useSelector, useDispatch } from "react-redux";
 import { SignupForm, LoginForm } from "../../components";
 import { loginFunc } from "../../Utility/reduxtool/UserLoggedSlice";
 import CommentsOfRecipe from "./Comments";
 import { host } from "../../constants/constants";
+import { toast } from 'react-toastify'
 
 
 function DetailedRecipe() {
@@ -80,7 +81,7 @@ const [count,setCount]= useState(0)
       const response = await axios.get(
         `${host}/recipes/${details}`
       );
-      console.log(response.data);
+      // console.log(response.data);
       setRecipes(response.data);
       // setName(recipes[0].recipe.label)
     } catch (error) {
@@ -137,6 +138,10 @@ const [count,setCount]= useState(0)
     })
     .then(response => {
       console.log(response);
+      toast.success(`${ recipes[0].recipe.label} added to saves`, {
+        position: toast.POSITION.TOP_RIGHT
+    });
+
     })
     .catch(error => {
       console.log(error);
@@ -197,11 +202,7 @@ const [count,setCount]= useState(0)
                     })}
                   </ol>
                 </div>
-            
-               
-
-
-              
+                   
               </div>
 )
 })
