@@ -180,7 +180,7 @@
 .seacrch-card_duration{
     position: absolute;
     right: 10px;
-    bottom: 16px;
+    bottom: 13px;
 }
 
 .seacrch-card_source span{
@@ -226,6 +226,10 @@ header {
   .search-page-card:hover .share-hover {
     opacity: 1;
   }
+
+  .stars-mv span{
+    font-size: 1.2rem;
+}
 
 
   @media  (min-width:744px) and (max-width:1024px){
