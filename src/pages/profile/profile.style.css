@@ -11,6 +11,7 @@
 .top-profile-cntnr{
     position: relative;
     height: 50vh;
+    background-color: #e7e7e7;
 }
 
 /* .profile-emoji-img {
@@ -75,12 +76,105 @@ position: absolute;
     color: #892074;
     }
 
+    .side_profile_content li {
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+
+
+.side_profile_content {
+    padding: 0;
+    }
+
+    .profile_static_cntr {
+        /* padding: 2rem; */
+        background-color: #e7e7e7;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+
+    .profile_white_cntr {
+        display: flex;
+        gap: 40px;    display: flex;
+        width: 70%;
+        gap: 40px;
+        background-color: #FFF;
+        padding: 1rem;
+    }
+
+    .profile_label{
+        text-align: center;
+    }
+
+    .right_section_div{
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile_white_cntr{
+        display: none;
+    }
+
+    .select{
+        width: 100%;
+    padding: 4px;
+    }
+
+    .iceCream{
+        width: 75%;
+    }
+
 
     @media (max-width: 744px){
         .email-shower{
-            position: absolute;
-            top: 32vh;
-            left: 20%;
+            position: static;
+            text-align: center;
+            padding-bottom: 1rem;
         }
 
+        .mobile_white_cntr{
+            display: block;
+        padding: 0.8rem;
+
+        }
+        
+
+        .profile_white_cntr{
+            display: none;
+        }
+
+        .top-profile-cntnr {
+            height: auto;
+            /* height: 40vh; */
+        }
+
+        .profile_static_cntr {
+    background-color: #fff;
+}
+
+.emj-follower-cntr {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: -6rem;
     }
+
+    .profile-emoji-img img {
+    height: 150px;
+}
+    }
+
+
+    @media  (min-width:744px) and (max-width:900px){
+    .email-shower {
+        left: 50%;
+    }
+
+    .top-profile-cntnr {
+        height: 30vh;
+    }
+
+}

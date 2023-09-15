@@ -83,7 +83,9 @@ function SignupForm({ user }) {
             localStorage.setItem("token", res.data.token);
             localStorage.setItem("user_id", res.data._id);
             localStorage.setItem("user_name", res.data.email);
-
+            const expirationDate = new Date().getTime() + 7 * 24 * 60 * 60 * 1000; 
+            localStorage.setItem("tokenExpiration", expirationDate);
+            
             dispatch(homeIcon());
             // window.history.pushState({}, "", window.location.pathname);
 

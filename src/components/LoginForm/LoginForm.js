@@ -82,7 +82,9 @@ const [signin, setSignup] = useState(state.signinPage)
             localStorage.setItem("token", res.data.token);
             localStorage.setItem("user_id", res.data._id);
             localStorage.setItem("user_name", res.data.email);
-        //  console.log(res.data);
+            const expirationDate = new Date().getTime() + 7 * 24 * 60 * 60 * 1000; 
+            localStorage.setItem("tokenExpiration", expirationDate);
+            //  console.log(res.data);
             dispatch(homeIcon());
             // window.history.pushState({}, "", window.location.pathname);
 

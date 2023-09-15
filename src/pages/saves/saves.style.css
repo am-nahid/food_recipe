@@ -208,10 +208,18 @@ gap: 20px;
     /* width: 100%; */
     }
 
+.save-card_label{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
 
     .card-firstHalf img{
         width: 100%;
         height: 97%;
+        object-fit: cover;
     }
 
     .card-secondHalf {

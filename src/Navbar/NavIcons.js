@@ -43,7 +43,18 @@ const handleLoggedUser=()=>{
 
 }
 
+const tokenExpiration = localStorage.getItem("tokenExpiration");
 const handleLogout=()=>{
+  
+  //handling automatic logout
+  if (token && tokenExpiration) {
+    const currentTime = new Date().getTime();
+    if (currentTime > tokenExpiration) {
+      localStorage.clear()
+    }
+  }
+
+  // for normal logout
   localStorage.clear()
   setLoggedInDropDown(false)
 
