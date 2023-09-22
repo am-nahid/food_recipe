@@ -126,7 +126,7 @@ const [count,setCount]= useState(0)
     'Authorization': `Bearer ${token}`
   };
   
-  const handleSave = () => {
+  const handleSave = (item) => {
     const API = `${host}/user/save-recipe`;
   
     axios.post(API, {
@@ -169,7 +169,7 @@ const [count,setCount]= useState(0)
                 <h1 >{item.recipe.label}</h1>
                 <div className="detail_btns">
                   <ul>
-                    <li onClick={handleSave}>
+                    <li onClick={()=>handleSave(item)}>
                       <FaRegBookmark />
                     </li>
                     <li>
